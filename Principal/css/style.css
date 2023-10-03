@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+  margin-right: 20px;
+}
+
+.navbar .nav-links ul li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links ul li.home a {
+  color: red;
+  font-weight: 600;
+}
+
+.navbar .menu-nav {
+  display: none;
+  width: 35px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* Ocultar subcategorias por padrão */
+/* Ocultar subcategorias por padrão */
+.navbar .nav-links ul li .subcategorias {
+  display: none;
+}
+
+/* Mostrar subcategorias quando o mouse passa sobre a categoria */
+.navbar .nav-links ul li:hover .subcategorias {
+  display: block;
+}
+
+.subcategorias {
+  display: none;
+}
+
+/* Ocultar subcategorias por padrão */
+.navbar .nav-links ul li .subcategorias {
+  display: none;
+  position: absolute;
+  top: 100%; /* Coloca as subcategorias logo abaixo da categoria */
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.213);
+  padding: 10px;
+  min-width: 200px;
+  border-radius: 10px;
+}
+
+/* Posicionar o elemento pai como relativo */
+.navbar .nav-links ul li {
+  position: relative;
+}
+
+/* Mostrar subcategorias quando o mouse passa sobre a categoria */
+.navbar .nav-links ul li:hover .subcategorias {
+  display: block;
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .navbar .menu-nav {
+    display: block;
+  }
+  .nav-links ul {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+  .navbar .nav-links ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+}

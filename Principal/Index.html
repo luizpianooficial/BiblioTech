@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/biblioteca_offline/Principal/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/biblioteca_offline/Principal/css/card-livros.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+  <nav class="navbar">
+    <a href="#" class="logo">BiblioTech</a>
+    <img src="/biblioteca_offline/imagens/menu-btn.png" alt="Menu" class="menu-nav">
+    <div class="nav-links">
+      <ul>
+        <li><a href="#" class="home">Home</a></li>
+        <!-- No seu código HTML -->
+<li>
+  <div class="category-container">
+    <a href="#">Categoria</a>
+    <ul class="subcategorias">
+      <li><a href="#">Ação</a></li>
+      <li><a href="#">Romance</a></li>
+      <li><a href="#">Ficção ciêntifica</a></li>
+    </ul>
+  </div>
+</li>
+
+        <li><a href="#">Baixar</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="conteiner-items">
+    <div class="items items-1">1</div>
+    <div class="items items-2">2</div>
+    <div class="items items-3">3</div>
+    <div class="items items-4">4</div>
+   
+  </div>
+
+  <header></header>
+</div>
+  <script>
+    const menu = document.querySelector(".menu-nav")
+    const navLinks = document.querySelector(".nav-links ul")
+    menu.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-menu")
+    })
+  </script>
+</body>
+
+</html>

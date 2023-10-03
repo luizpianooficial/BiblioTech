@@ -1,0 +1,77 @@
+body{
+  background: transparent; /* Defina o fundo como transparente */
+  background-image: url('/biblioteca_offline/imagens/landscape.jpg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Ajuste o tamanho da imagem para cobrir todo o espaço do div */
+  background-repeat: no-repeat; /* Evite que a imagem seja repetida */
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-image: url(/biblioteca_offline/imagens/landscape.jpg);
+  
+}
+.conteiner-items{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  margin: 250px auto;
+  height: 320px;
+  
+  background-color: rgba(240, 248, 255, 0.12);
+  
+
+}
+
+.items {
+  width: 180px;
+  /* height: 80px; */
+  padding: 20px;
+  margin: 20px;
+  background: transparent; /* Defina o fundo como transparente */
+  background-image: url('/biblioteca_offline/imagens/landscape.jpg'); /* Substitua pelo caminho da sua imagem */
+  background-size: cover; /* Ajuste o tamanho da imagem para cobrir todo o espaço do div */
+  background-repeat: no-repeat; /* Evite que a imagem seja repetida */
+  background-position: center; 
+  font-size: 20px;
+  font-weight: bold;
+  color: aliceblue;
+  
+  
+}
+
+.items-1:hover{
+  transform: scale(1.1);
+}
+.items-2:hover{
+  transform: scale(1.1);
+}
+.items-3:hover{
+  transform: scale(1.1);
+}
+.items-4:hover{
+  transform: scale(1.1);
+}
+
+
+.items-1 { 
+  background-image: url('/biblioteca_offline/imagens/livro1.png');
+  transition: transform 0.3s ease; /* Substitua pelo caminho da sua imagem */
+}
+
+.items-2 { 
+  background-image: url('/biblioteca_offline/imagens/livro2.png'); 
+  transition: transform 0.3s ease;
+  /* Substitua pelo caminho da sua imagem */
+}
+
+.items-3 { 
+  background-image: url('/biblioteca_offline/imagens/livro3.png'); 
+  transition: transform 0.3s ease;
+  /* Substitua pelo caminho da sua imagem */
+}
+
+.items-4 { 
+  background-image: url('/biblioteca_offline/imagens/livro4.png'); 
+  transition: transform 0.3s ease;
+  /* Substitua pelo caminho da sua imagem */
+}

@@ -1,0 +1,26 @@
+/* Estilize o sub-menu como oculto por padrão */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Quando o usuário passar o mouse sobre o item "Categoria", exiba o sub-menu */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Estilize os itens de subcategoria */
+  .dropdown-menu li {
+    list-style: none;
+    margin: 5px 0;
+  }
+  
+  /* Estilize os links de subcategoria */
+  .dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+  }
+  
